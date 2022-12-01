@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.src.airdrop</string>
+	<key>category</key>
+	<string>Universal Action</string>
+	<key>connections</key>
+	<dict>
+		<key>44438A19-2D5B-44FE-94C6-2F67AEAB0F83</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49C86BF2-AED5-4A39-B10C-0DECD21CAD25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Stephen Christy</string>
+	<key>description</key>
+	<string>AirDrop selected file(s)</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>AirDrop file(s)</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>AirDrop file(s)</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>44438A19-2D5B-44FE-94C6-2F67AEAB0F83</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputmode</key>
+				<integer>1</integer>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>shortcut</key>
+				<string>AirDrop</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.runshortcut</string>
+			<key>uid</key>
+			<string>49C86BF2-AED5-4A39-B10C-0DECD21CAD25</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Usage
+
+This simple workflow works as a Universal Action on a selected file or files in Finder and triggers a macOS Shortcut called `AirDrop` which offers to transfer the file(s) via AirDrop. By design it does *not* work with a selected URL or selected text.
+
+# Important note
+
+The workflow requires a macOS Shortcut called `AirDrop`. The Shortcut looks like this:
+
+![AirDrop file(s)](Images/AirDrop Shortcut.jpg)
+
+You need to set that up to ensure the workflow functions.</string>
+	<key>uidata</key>
+	<dict>
+		<key>44438A19-2D5B-44FE-94C6-2F67AEAB0F83</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>49C86BF2-AED5-4A39-B10C-0DECD21CAD25</key>
+		<dict>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
